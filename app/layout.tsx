@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import { siteConfig } from "@/data/site";
 import "./globals.css";
+
+const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -37,6 +40,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           aria-hidden
         />
         <div className="relative flex min-h-full flex-col">{children}</div>
+        {gaMeasurementId ? (
+          <GoogleAnalytics gaId={gaMeasurementId} />
+        ) : null}
       </body>
     </html>
   );
