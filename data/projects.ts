@@ -28,7 +28,7 @@ export const projectFilters: { id: ProjectFilterCategory; label: string }[] = [
   { id: "all", label: "Semua" },
   { id: "healthcare-pos", label: "Kesehatan & Kasir" },
   { id: "hr-payroll", label: "HR & Gaji" },
-  { id: "websites", label: "Website Perusahaan" },
+  { id: "websites", label: "Website & Aplikasi Web" },
 ];
 
 export const projects: Project[] = [
@@ -131,5 +131,21 @@ export const projects: Project[] = [
     category: "websites",
     url: "https://cardiacsave.com/",
     imageGradient: "from-rose-950/35 via-stone-900/90 to-black",
+  },
+  {
+    id: "voting-gaes-rt08",
+    title: "E-Voting RT 08 (VotingGaes)",
+    description:
+      "Aplikasi voting online untuk RT: warga login, memilih calon, dan pengurus RT mengelola data—praktis menggantikan voting manual.",
+    highlights: [
+      "Login warga & registrasi akun",
+      "Voting digital aman",
+      "Panel pengurus RT",
+      "Siap dipakai di HP",
+    ],
+    techStack: ["Aplikasi web", "Login & role", "E-voting", "Domain .my.id"],
+    category: "websites",
+    url: "https://www.votinggaes.my.id/",
+    imageGradient: "from-indigo-950/45 via-stone-900/90 to-black",
   },
 ];

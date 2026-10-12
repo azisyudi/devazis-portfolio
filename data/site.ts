@@ -84,9 +84,9 @@ export const siteConfig = {
 
 export const metrics = [
   {
-    value: "6+",
+    value: "7+",
     label: "Sistem live",
-    description: "Aplikasi yang sudah dipakai klien di lapangan",
+    description: "Aplikasi yang sudah dipakai klien & komunitas di lapangan",
   },
   {
     value: "3",
