@@ -4,7 +4,9 @@ import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import { siteConfig } from "@/data/site";
 import "./globals.css";
 
-const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+const gaMeasurementId =
+  process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ??
+  siteConfig.analytics.measurementId;
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",

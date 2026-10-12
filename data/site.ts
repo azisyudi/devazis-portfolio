@@ -25,6 +25,10 @@ export const siteConfig = {
       "Komunikasi jelas—cocok untuk presentasi ke klien & manajemen",
     ],
   },
+  /** Google Analytics 4 — ID publik (bukan rahasia) */
+  analytics: {
+    measurementId: "G-TQC0D698PQ",
+  },
   contact: {
     email: "azis.pbr@gmail.com",
     phoneDisplay: "0858-9165-8046",
